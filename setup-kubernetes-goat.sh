@@ -34,15 +34,15 @@ if [[ -n "$INSECURE" ]]; then
   export HELM_INSECURE="--kube-insecure-skip-tls-verify"
 fi
 
-# Checking kubectl setup
-kubectl $KUBECTL_INSECURE version > /dev/null 2>&1
-if [ $? -eq 0 ];
-then
-    echo "kubectl setup looks good."
-else 
-    echo "Error: Could not find kubectl or an other error happened, please check kubectl setup."
-    exit;
-fi
+# # Checking kubectl setup
+# kubectl $KUBECTL_INSECURE version > /dev/null 2>&1
+# if [ $? -eq 0 ];
+# then
+#     echo "kubectl setup looks good."
+# else 
+#     echo "Error: Could not find kubectl or an other error happened, please check kubectl setup."
+#     exit;
+# fi
 
 # Deprecated helm2 scenario
 # Checking helm2 setup

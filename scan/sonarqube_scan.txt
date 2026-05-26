@@ -1,0 +1,2665 @@
+{
+  "total": 52,
+  "p": 1,
+  "ps": 100,
+  "paging": {
+    "pageIndex": 1,
+    "pageSize": 100,
+    "total": 52
+  },
+  "effortTotal": 2180,
+  "debtTotal": 2180,
+  "issues": [
+    {
+      "key": "AZ5d3cceLWI_jCVtyWJm",
+      "rule": "kubernetes:S6428",
+      "severity": "MAJOR",
+      "component": "Haiyahhh_kubernetes-goat:scenarios/docker-bench-security/deployment.yaml",
+      "project": "Haiyahhh_kubernetes-goat",
+      "line": 56,
+      "hash": "1e4bba206068d00cce6b7aa94fc119a1",
+      "textRange": {
+        "startLine": 56,
+        "endLine": 56,
+        "startOffset": 22,
+        "endOffset": 26
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Ensure that enabling privileged mode is safe here.",
+      "effort": "1h",
+      "debt": "1h",
+      "author": "pankdubal@gmail.com",
+      "tags": [
+        "cwe",
+        "former-hotspot"
+      ],
+      "creationDate": "2026-03-22T13:50:26+0000",
+      "updateDate": "2026-05-25T06:40:40+0000",
+      "type": "VULNERABILITY",
+      "organization": "haiyahhh",
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "kubernetes-goat",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "e470673f-e147-4b95-b35a-2c7d99d479f9",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AZ5d3celLWI_jCVtyWJ6",
+      "rule": "kubernetes:S6865",
+      "severity": "MAJOR",
+      "component": "Haiyahhh_kubernetes-goat:scenarios/health-check/deployment-simple-alternative.yaml",
+      "project": "Haiyahhh_kubernetes-goat",
+      "line": 20,
+      "hash": "d9e939dad9db0fbf12a7e7ed37d92d0f",
+      "textRange": {
+        "startLine": 20,
+        "endLine": 20,
+        "startOffset": 6,
+        "endOffset": 16
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Bind this resource's automounted service account to RBAC or disable automounting.",
+      "effort": "1h",
+      "debt": "1h",
+      "author": "pankdubal@gmail.com",
+      "tags": [],
+      "creationDate": "2026-03-22T13:50:26+0000",
+      "updateDate": "2026-05-25T06:40:40+0000",
+      "type": "VULNERABILITY",
+      "organization": "haiyahhh",
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "MEDIUM"
+        },
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "kubernetes-goat",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "e470673f-e147-4b95-b35a-2c7d99d479f9",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AZ5d3celLWI_jCVtyWJ3",
+      "rule": "kubernetes:S6428",
+      "severity": "MAJOR",
+      "component": "Haiyahhh_kubernetes-goat:scenarios/health-check/deployment-simple-alternative.yaml",
+      "project": "Haiyahhh_kubernetes-goat",
+      "line": 30,
+      "hash": "1e4bba206068d00cce6b7aa94fc119a1",
+      "textRange": {
+        "startLine": 30,
+        "endLine": 30,
+        "startOffset": 22,
+        "endOffset": 26
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Ensure that enabling privileged mode is safe here.",
+      "effort": "1h",
+      "debt": "1h",
+      "author": "pankdubal@gmail.com",
+      "tags": [
+        "cwe",
+        "former-hotspot"
+      ],
+      "creationDate": "2026-03-22T13:50:26+0000",
+      "updateDate": "2026-05-25T06:40:40+0000",
+      "type": "VULNERABILITY",
+      "organization": "haiyahhh",
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "kubernetes-goat",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "e470673f-e147-4b95-b35a-2c7d99d479f9",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AZ5d3celLWI_jCVtyWJ4",
+      "rule": "kubernetes:S6429",
+      "severity": "MAJOR",
+      "component": "Haiyahhh_kubernetes-goat:scenarios/health-check/deployment-simple-alternative.yaml",
+      "project": "Haiyahhh_kubernetes-goat",
+      "line": 54,
+      "hash": "58c43891abb20877bf2f53e6fc518327",
+      "textRange": {
+        "startLine": 54,
+        "endLine": 54,
+        "startOffset": 18,
+        "endOffset": 38
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Make sure exposing the Docker socket is safe here.",
+      "effort": "1h",
+      "debt": "1h",
+      "author": "pankdubal@gmail.com",
+      "tags": [
+        "cwe",
+        "former-hotspot"
+      ],
+      "creationDate": "2026-03-22T13:50:26+0000",
+      "updateDate": "2026-05-25T06:40:40+0000",
+      "type": "VULNERABILITY",
+      "organization": "haiyahhh",
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "kubernetes-goat",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "e470673f-e147-4b95-b35a-2c7d99d479f9",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AZ5d3cecLWI_jCVtyWJv",
+      "rule": "kubernetes:S6428",
+      "severity": "MAJOR",
+      "component": "Haiyahhh_kubernetes-goat:scenarios/health-check/deployment.yaml",
+      "project": "Haiyahhh_kubernetes-goat",
+      "line": 52,
+      "hash": "1e4bba206068d00cce6b7aa94fc119a1",
+      "textRange": {
+        "startLine": 52,
+        "endLine": 52,
+        "startOffset": 22,
+        "endOffset": 26
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Ensure that enabling privileged mode is safe here.",
+      "effort": "1h",
+      "debt": "1h",
+      "author": "pankdubal@gmail.com",
+      "tags": [
+        "cwe",
+        "former-hotspot"
+      ],
+      "creationDate": "2026-03-22T13:50:26+0000",
+      "updateDate": "2026-05-25T06:40:40+0000",
+      "type": "VULNERABILITY",
+      "organization": "haiyahhh",
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "kubernetes-goat",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "e470673f-e147-4b95-b35a-2c7d99d479f9",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AZ5d3cecLWI_jCVtyWJz",
+      "rule": "kubernetes:S6870",
+      "severity": "MAJOR",
+      "component": "Haiyahhh_kubernetes-goat:scenarios/health-check/deployment.yaml",
+      "project": "Haiyahhh_kubernetes-goat",
+      "line": 54,
+      "hash": "4132cf6ea82375309d4a72d791f70d1c",
+      "textRange": {
+        "startLine": 54,
+        "endLine": 54,
+        "startOffset": 8,
+        "endOffset": 12
+      },
+      "flows": [
+        {
+          "locations": [
+            {
+              "component": "Haiyahhh_kubernetes-goat:scenarios/health-check/deployment.yaml",
+              "textRange": {
+                "startLine": 67,
+                "endLine": 67,
+                "startOffset": 12,
+                "endOffset": 21
+              },
+              "msg": "for this volume mount"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "Haiyahhh_kubernetes-goat:scenarios/health-check/deployment.yaml",
+              "textRange": {
+                "startLine": 71,
+                "endLine": 71,
+                "startOffset": 12,
+                "endOffset": 21
+              },
+              "msg": "for this volume mount"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "Haiyahhh_kubernetes-goat:scenarios/health-check/deployment.yaml",
+              "textRange": {
+                "startLine": 75,
+                "endLine": 75,
+                "startOffset": 12,
+                "endOffset": 21
+              },
+              "msg": "for this volume mount"
+            }
+          ]
+        }
+      ],
+      "status": "OPEN",
+      "message": "Specify a storage limit for this container.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "pankdubal@gmail.com",
+      "tags": [],
+      "creationDate": "2026-03-22T13:50:26+0000",
+      "updateDate": "2026-05-25T06:40:40+0000",
+      "type": "VULNERABILITY",
+      "organization": "haiyahhh",
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "MEDIUM"
+        },
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "kubernetes-goat",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "e470673f-e147-4b95-b35a-2c7d99d479f9",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AZ5d3cecLWI_jCVtyWJw",
+      "rule": "kubernetes:S6429",
+      "severity": "MAJOR",
+      "component": "Haiyahhh_kubernetes-goat:scenarios/health-check/deployment.yaml",
+      "project": "Haiyahhh_kubernetes-goat",
+      "line": 97,
+      "hash": "58c43891abb20877bf2f53e6fc518327",
+      "textRange": {
+        "startLine": 97,
+        "endLine": 97,
+        "startOffset": 18,
+        "endOffset": 38
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Make sure exposing the Docker socket is safe here.",
+      "effort": "1h",
+      "debt": "1h",
+      "author": "pankdubal@gmail.com",
+      "tags": [
+        "cwe",
+        "former-hotspot"
+      ],
+      "creationDate": "2026-03-22T13:50:26+0000",
+      "updateDate": "2026-05-25T06:40:40+0000",
+      "type": "VULNERABILITY",
+      "organization": "haiyahhh",
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "kubernetes-goat",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "e470673f-e147-4b95-b35a-2c7d99d479f9",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AZ5d3cjmLWI_jCVtyWLF",
+      "rule": "python:S6463",
+      "severity": "MAJOR",
+      "component": "Haiyahhh_kubernetes-goat:platforms/aws-setup/aws-kind-ec2-cdk/aws_kind_ec2_cdk/aws_kind_ec2_cdk_stack.py",
+      "project": "Haiyahhh_kubernetes-goat",
+      "line": 50,
+      "hash": "8a9390708c7e736a4b2697a22dff5b66",
+      "textRange": {
+        "startLine": 50,
+        "endLine": 50,
+        "startOffset": 70,
+        "endOffset": 93
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Make sure that allowing unrestricted outbound communications is safe here.",
+      "effort": "1h",
+      "debt": "1h",
+      "author": "",
+      "tags": [
+        "aws",
+        "cwe",
+        "former-hotspot"
+      ],
+      "creationDate": "2022-07-17T22:06:35+0000",
+      "updateDate": "2026-05-25T06:40:40+0000",
+      "type": "VULNERABILITY",
+      "organization": "haiyahhh",
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "kubernetes-goat",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "e470673f-e147-4b95-b35a-2c7d99d479f9",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AZ5d3cfFLWI_jCVtyWKO",
+      "rule": "kubernetes:S6867",
+      "severity": "MAJOR",
+      "component": "Haiyahhh_kubernetes-goat:scenarios/hunger-check/deployment.yaml",
+      "project": "Haiyahhh_kubernetes-goat",
+      "line": 14,
+      "hash": "22607fdb84b7caea462e57653915b7e7",
+      "textRange": {
+        "startLine": 14,
+        "endLine": 14,
+        "startOffset": 14,
+        "endOffset": 17
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Replace this wildcard with a clear list of allowed resources.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "madhu.akula@hotmail.com",
+      "tags": [],
+      "creationDate": "2021-06-03T23:23:06+0000",
+      "updateDate": "2026-05-25T06:40:40+0000",
+      "type": "VULNERABILITY",
+      "organization": "haiyahhh",
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "MEDIUM"
+        },
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "kubernetes-goat",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "e470673f-e147-4b95-b35a-2c7d99d479f9",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AZ5d3cfFLWI_jCVtyWKR",
+      "rule": "kubernetes:S6865",
+      "severity": "MAJOR",
+      "component": "Haiyahhh_kubernetes-goat:scenarios/hunger-check/deployment.yaml",
+      "project": "Haiyahhh_kubernetes-goat",
+      "line": 69,
+      "hash": "57a3ce0a634c0697c80063cee26ca7b5",
+      "textRange": {
+        "startLine": 69,
+        "endLine": 69,
+        "startOffset": 26,
+        "endOffset": 41
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Bind this Service Account to RBAC or disable \"automountServiceAccountToken\".",
+      "effort": "1h",
+      "debt": "1h",
+      "author": "madhu.akula@hotmail.com",
+      "tags": [],
+      "creationDate": "2021-06-03T23:23:06+0000",
+      "updateDate": "2026-05-25T06:40:40+0000",
+      "type": "VULNERABILITY",
+      "organization": "haiyahhh",
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "MEDIUM"
+        },
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "kubernetes-goat",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "e470673f-e147-4b95-b35a-2c7d99d479f9",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AZ5d3cfdLWI_jCVtyWKh",
+      "rule": "kubernetes:S6865",
+      "severity": "MAJOR",
+      "component": "Haiyahhh_kubernetes-goat:scenarios/hidden-in-layers/deployment.yaml",
+      "project": "Haiyahhh_kubernetes-goat",
+      "line": 10,
+      "hash": "d9e939dad9db0fbf12a7e7ed37d92d0f",
+      "textRange": {
+        "startLine": 10,
+        "endLine": 10,
+        "startOffset": 6,
+        "endOffset": 16
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Bind this resource's automounted service account to RBAC or disable automounting.",
+      "effort": "1h",
+      "debt": "1h",
+      "author": "rewanth1997@gmail.com",
+      "tags": [],
+      "creationDate": "2021-04-19T14:09:03+0000",
+      "updateDate": "2026-05-25T06:40:40+0000",
+      "type": "VULNERABILITY",
+      "organization": "haiyahhh",
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "MEDIUM"
+        },
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "kubernetes-goat",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "e470673f-e147-4b95-b35a-2c7d99d479f9",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AZ5d3cfdLWI_jCVtyWKf",
+      "rule": "kubernetes:S6864",
+      "severity": "MAJOR",
+      "component": "Haiyahhh_kubernetes-goat:scenarios/hidden-in-layers/deployment.yaml",
+      "project": "Haiyahhh_kubernetes-goat",
+      "line": 11,
+      "hash": "bcbf9966d4af487219ec92b82e5163ba",
+      "textRange": {
+        "startLine": 11,
+        "endLine": 11,
+        "startOffset": 8,
+        "endOffset": 12
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Specify a memory limit for this container.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "rewanth1997@gmail.com",
+      "tags": [],
+      "creationDate": "2021-04-19T14:09:03+0000",
+      "updateDate": "2026-05-25T06:40:40+0000",
+      "type": "VULNERABILITY",
+      "organization": "haiyahhh",
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "MEDIUM"
+        },
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "kubernetes-goat",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "e470673f-e147-4b95-b35a-2c7d99d479f9",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AZ5d3cZYLWI_jCVtyWIw",
+      "rule": "Web:S5725",
+      "severity": "MINOR",
+      "component": "Haiyahhh_kubernetes-goat:infrastructure/health-check/views/index.html",
+      "project": "Haiyahhh_kubernetes-goat",
+      "line": 8,
+      "hash": "897cccca62c67c30f560a95a0c86adad",
+      "textRange": {
+        "startLine": 8,
+        "endLine": 8,
+        "startOffset": 4,
+        "endOffset": 91
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Make sure not using resource integrity feature is safe here.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "madhu.akula@hotmail.com",
+      "tags": [
+        "cwe",
+        "former-hotspot"
+      ],
+      "creationDate": "2020-11-06T21:57:28+0000",
+      "updateDate": "2026-05-25T06:40:40+0000",
+      "type": "VULNERABILITY",
+      "organization": "haiyahhh",
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "LOW"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "kubernetes-goat",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "e470673f-e147-4b95-b35a-2c7d99d479f9",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AZ5d3cYlLWI_jCVtyWIm",
+      "rule": "kubernetes:S6867",
+      "severity": "MAJOR",
+      "component": "Haiyahhh_kubernetes-goat:infrastructure/helm-tiller/pwnchart/templates/clusterrole.yaml",
+      "project": "Haiyahhh_kubernetes-goat",
+      "line": 7,
+      "hash": "17a345dac8d758f499de1fba05508701",
+      "textRange": {
+        "startLine": 7,
+        "endLine": 7,
+        "startOffset": 16,
+        "endOffset": 19
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Replace this wildcard with a clear list of allowed resources.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "madhu.akula@hotmail.com",
+      "tags": [],
+      "creationDate": "2020-06-20T09:59:29+0000",
+      "updateDate": "2026-05-25T06:40:40+0000",
+      "type": "VULNERABILITY",
+      "organization": "haiyahhh",
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "MEDIUM"
+        },
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "kubernetes-goat",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "e470673f-e147-4b95-b35a-2c7d99d479f9",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AZ5d3cYlLWI_jCVtyWIn",
+      "rule": "kubernetes:S6867",
+      "severity": "MAJOR",
+      "component": "Haiyahhh_kubernetes-goat:infrastructure/helm-tiller/pwnchart/templates/clusterrole.yaml",
+      "project": "Haiyahhh_kubernetes-goat",
+      "line": 8,
+      "hash": "53988a636fe177165e41059618c121b0",
+      "textRange": {
+        "startLine": 8,
+        "endLine": 8,
+        "startOffset": 12,
+        "endOffset": 15
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Replace this wildcard with a clear list of allowed resources.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "madhu.akula@hotmail.com",
+      "tags": [],
+      "creationDate": "2020-06-20T09:59:29+0000",
+      "updateDate": "2026-05-25T06:40:40+0000",
+      "type": "VULNERABILITY",
+      "organization": "haiyahhh",
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "MEDIUM"
+        },
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "kubernetes-goat",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "e470673f-e147-4b95-b35a-2c7d99d479f9",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AZ5d3cZwLWI_jCVtyWI4",
+      "rule": "python:S8392",
+      "severity": "BLOCKER",
+      "component": "Haiyahhh_kubernetes-goat:infrastructure/info-app/app.py",
+      "project": "Haiyahhh_kubernetes-goat",
+      "line": 11,
+      "hash": "25247d24ec31c758fcc135749cd98c77",
+      "textRange": {
+        "startLine": 11,
+        "endLine": 11,
+        "startOffset": 4,
+        "endOffset": 11
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Avoid binding the application to all network interfaces.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "madhuakula@users.noreply.github.com",
+      "tags": [
+        "deployment",
+        "fastapi",
+        "flask",
+        "least-privilege",
+        "network",
+        "uvicorn"
+      ],
+      "creationDate": "2020-06-15T15:43:35+0000",
+      "updateDate": "2026-05-25T06:40:40+0000",
+      "type": "VULNERABILITY",
+      "organization": "haiyahhh",
+      "cleanCodeAttribute": "CONVENTIONAL",
+      "cleanCodeAttributeCategory": "CONSISTENT",
+      "impacts": [
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "BLOCKER"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "kubernetes-goat",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "e470673f-e147-4b95-b35a-2c7d99d479f9",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AZ5d3cU2LWI_jCVtyWIc",
+      "rule": "Web:S5725",
+      "severity": "MINOR",
+      "component": "Haiyahhh_kubernetes-goat:infrastructure/internal-api/code/index.html",
+      "project": "Haiyahhh_kubernetes-goat",
+      "line": 8,
+      "hash": "897cccca62c67c30f560a95a0c86adad",
+      "textRange": {
+        "startLine": 8,
+        "endLine": 8,
+        "startOffset": 4,
+        "endOffset": 91
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Make sure not using resource integrity feature is safe here.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "madhuakula@users.noreply.github.com",
+      "tags": [
+        "cwe",
+        "former-hotspot"
+      ],
+      "creationDate": "2020-06-15T15:43:35+0000",
+      "updateDate": "2026-05-25T06:40:40+0000",
+      "type": "VULNERABILITY",
+      "organization": "haiyahhh",
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "LOW"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "kubernetes-goat",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "e470673f-e147-4b95-b35a-2c7d99d479f9",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AZ5d3cUiLWI_jCVtyWIb",
+      "rule": "jssecurity:S6350",
+      "severity": "MAJOR",
+      "component": "Haiyahhh_kubernetes-goat:infrastructure/internal-api/code/server.js",
+      "project": "Haiyahhh_kubernetes-goat",
+      "line": 22,
+      "hash": "aeb6624c5f42e2a09b8732a54ee88012",
+      "textRange": {
+        "startLine": 22,
+        "endLine": 22,
+        "startOffset": 18,
+        "endOffset": 27
+      },
+      "flows": [
+        {
+          "locations": [
+            {
+              "component": "Haiyahhh_kubernetes-goat:infrastructure/internal-api/code/server.js",
+              "textRange": {
+                "startLine": 22,
+                "endLine": 22,
+                "startOffset": 18,
+                "endOffset": 27
+              },
+              "msg": "Sink: this invocation is not safe; a malicious value can be used as argument"
+            },
+            {
+              "component": "Haiyahhh_kubernetes-goat:infrastructure/internal-api/code/server.js",
+              "textRange": {
+                "startLine": 22,
+                "endLine": 22,
+                "startOffset": 37,
+                "endOffset": 45
+              },
+              "msg": "A malicious value was previously assigned to field ‘endpoint’"
+            },
+            {
+              "component": "Haiyahhh_kubernetes-goat:infrastructure/internal-api/code/server.js",
+              "textRange": {
+                "startLine": 20,
+                "endLine": 20,
+                "startOffset": 8,
+                "endOffset": 16
+              },
+              "msg": "A malicious value can be assigned to field ‘endpoint’"
+            },
+            {
+              "component": "Haiyahhh_kubernetes-goat:infrastructure/internal-api/code/server.js",
+              "textRange": {
+                "startLine": 20,
+                "endLine": 20,
+                "startOffset": 28,
+                "endOffset": 36
+              },
+              "msg": "Source: a user can craft an HTTP request with malicious content"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "Haiyahhh_kubernetes-goat:infrastructure/internal-api/code/server.js",
+              "textRange": {
+                "startLine": 22,
+                "endLine": 22,
+                "startOffset": 18,
+                "endOffset": 27
+              },
+              "msg": "Sink: this invocation is not safe; a malicious value can be used as argument"
+            },
+            {
+              "component": "Haiyahhh_kubernetes-goat:infrastructure/internal-api/code/server.js",
+              "textRange": {
+                "startLine": 22,
+                "endLine": 22,
+                "startOffset": 68,
+                "endOffset": 74
+              },
+              "msg": "A malicious value was previously assigned to field ‘method’"
+            },
+            {
+              "component": "Haiyahhh_kubernetes-goat:infrastructure/internal-api/code/server.js",
+              "textRange": {
+                "startLine": 20,
+                "endLine": 20,
+                "startOffset": 38,
+                "endOffset": 44
+              },
+              "msg": "A malicious value can be assigned to field ‘method’"
+            },
+            {
+              "component": "Haiyahhh_kubernetes-goat:infrastructure/internal-api/code/server.js",
+              "textRange": {
+                "startLine": 20,
+                "endLine": 20,
+                "startOffset": 56,
+                "endOffset": 62
+              },
+              "msg": "Source: a user can craft an HTTP request with malicious content"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "Haiyahhh_kubernetes-goat:infrastructure/internal-api/code/server.js",
+              "textRange": {
+                "startLine": 22,
+                "endLine": 22,
+                "startOffset": 18,
+                "endOffset": 27
+              },
+              "msg": "Sink: this invocation is not safe; a malicious value can be used as argument"
+            },
+            {
+              "component": "Haiyahhh_kubernetes-goat:infrastructure/internal-api/code/server.js",
+              "textRange": {
+                "startLine": 22,
+                "endLine": 22,
+                "startOffset": 53,
+                "endOffset": 60
+              },
+              "msg": "A malicious value was previously assigned to field ‘headers’"
+            },
+            {
+              "component": "Haiyahhh_kubernetes-goat:infrastructure/internal-api/code/server.js",
+              "textRange": {
+                "startLine": 20,
+                "endLine": 20,
+                "startOffset": 73,
+                "endOffset": 80
+              },
+              "msg": "A malicious value can be assigned to field ‘headers’"
+            },
+            {
+              "component": "Haiyahhh_kubernetes-goat:infrastructure/internal-api/code/server.js",
+              "textRange": {
+                "startLine": 20,
+                "endLine": 20,
+                "startOffset": 92,
+                "endOffset": 99
+              },
+              "msg": "Source: a user can craft an HTTP request with malicious content"
+            }
+          ]
+        }
+      ],
+      "status": "OPEN",
+      "message": "Make sure that this user-controlled command argument doesn't lead to unwanted behavior.",
+      "effort": "30min",
+      "debt": "30min",
+      "author": "madhuakula@users.noreply.github.com",
+      "tags": [
+        "cwe"
+      ],
+      "creationDate": "2020-06-15T15:43:35+0000",
+      "updateDate": "2026-05-25T06:40:40+0000",
+      "type": "VULNERABILITY",
+      "organization": "haiyahhh",
+      "cleanCodeAttribute": "LOGICAL",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "kubernetes-goat",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "e470673f-e147-4b95-b35a-2c7d99d479f9",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AZ5d3cYULWI_jCVtyWIj",
+      "rule": "text:S8566",
+      "severity": "MAJOR",
+      "component": "Haiyahhh_kubernetes-goat:infrastructure/metadata-db/go.mod",
+      "project": "Haiyahhh_kubernetes-goat",
+      "flows": [],
+      "status": "OPEN",
+      "message": "Dependency versions are not predictable if the lock file (go.sum) is missing.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "madhuakula@users.noreply.github.com",
+      "tags": [],
+      "creationDate": "2020-06-15T15:43:35+0000",
+      "updateDate": "2026-05-25T06:40:40+0000",
+      "type": "VULNERABILITY",
+      "organization": "haiyahhh",
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "kubernetes-goat",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "e470673f-e147-4b95-b35a-2c7d99d479f9",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AZ5d3ccULWI_jCVtyWJg",
+      "rule": "kubernetes:S6865",
+      "severity": "MAJOR",
+      "component": "Haiyahhh_kubernetes-goat:scenarios/batch-check/job.yaml",
+      "project": "Haiyahhh_kubernetes-goat",
+      "line": 10,
+      "hash": "d9e939dad9db0fbf12a7e7ed37d92d0f",
+      "textRange": {
+        "startLine": 10,
+        "endLine": 10,
+        "startOffset": 6,
+        "endOffset": 16
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Bind this resource's automounted service account to RBAC or disable automounting.",
+      "effort": "1h",
+      "debt": "1h",
+      "author": "madhuakula@users.noreply.github.com",
+      "tags": [],
+      "creationDate": "2020-06-15T15:43:35+0000",
+      "updateDate": "2026-05-25T06:40:40+0000",
+      "type": "VULNERABILITY",
+      "organization": "haiyahhh",
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "MEDIUM"
+        },
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "kubernetes-goat",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "e470673f-e147-4b95-b35a-2c7d99d479f9",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AZ5d3ccULWI_jCVtyWJe",
+      "rule": "kubernetes:S6864",
+      "severity": "MAJOR",
+      "component": "Haiyahhh_kubernetes-goat:scenarios/batch-check/job.yaml",
+      "project": "Haiyahhh_kubernetes-goat",
+      "line": 11,
+      "hash": "d9373dd475cdeb02bd836eee5532155a",
+      "textRange": {
+        "startLine": 11,
+        "endLine": 11,
+        "startOffset": 8,
+        "endOffset": 12
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Specify a memory limit for this container.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "madhuakula@users.noreply.github.com",
+      "tags": [],
+      "creationDate": "2020-06-15T15:43:35+0000",
+      "updateDate": "2026-05-25T06:40:40+0000",
+      "type": "VULNERABILITY",
+      "organization": "haiyahhh",
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "MEDIUM"
+        },
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "kubernetes-goat",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "e470673f-e147-4b95-b35a-2c7d99d479f9",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AZ5d3cfNLWI_jCVtyWKW",
+      "rule": "kubernetes:S6865",
+      "severity": "MAJOR",
+      "component": "Haiyahhh_kubernetes-goat:scenarios/build-code/deployment.yaml",
+      "project": "Haiyahhh_kubernetes-goat",
+      "line": 15,
+      "hash": "d9e939dad9db0fbf12a7e7ed37d92d0f",
+      "textRange": {
+        "startLine": 15,
+        "endLine": 15,
+        "startOffset": 6,
+        "endOffset": 16
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Bind this resource's automounted service account to RBAC or disable automounting.",
+      "effort": "1h",
+      "debt": "1h",
+      "author": "madhuakula@users.noreply.github.com",
+      "tags": [],
+      "creationDate": "2020-06-15T15:43:35+0000",
+      "updateDate": "2026-05-25T06:40:40+0000",
+      "type": "VULNERABILITY",
+      "organization": "haiyahhh",
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "MEDIUM"
+        },
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "kubernetes-goat",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "e470673f-e147-4b95-b35a-2c7d99d479f9",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AZ5d3cesLWI_jCVtyWKA",
+      "rule": "kubernetes:S6865",
+      "severity": "MAJOR",
+      "component": "Haiyahhh_kubernetes-goat:scenarios/cache-store/deployment.yaml",
+      "project": "Haiyahhh_kubernetes-goat",
+      "line": 35,
+      "hash": "d9e939dad9db0fbf12a7e7ed37d92d0f",
+      "textRange": {
+        "startLine": 35,
+        "endLine": 35,
+        "startOffset": 6,
+        "endOffset": 16
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Bind this resource's automounted service account to RBAC or disable automounting.",
+      "effort": "1h",
+      "debt": "1h",
+      "author": "madhuakula@users.noreply.github.com",
+      "tags": [],
+      "creationDate": "2020-06-15T15:43:35+0000",
+      "updateDate": "2026-05-25T06:40:40+0000",
+      "type": "VULNERABILITY",
+      "organization": "haiyahhh",
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "MEDIUM"
+        },
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "kubernetes-goat",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "e470673f-e147-4b95-b35a-2c7d99d479f9",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AZ5d3cesLWI_jCVtyWJ-",
+      "rule": "kubernetes:S6864",
+      "severity": "MAJOR",
+      "component": "Haiyahhh_kubernetes-goat:scenarios/cache-store/deployment.yaml",
+      "project": "Haiyahhh_kubernetes-goat",
+      "line": 36,
+      "hash": "4874ed4215f05d45d9ab7ccf33eb73e9",
+      "textRange": {
+        "startLine": 36,
+        "endLine": 36,
+        "startOffset": 8,
+        "endOffset": 12
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Specify a memory limit for this container.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "madhuakula@users.noreply.github.com",
+      "tags": [],
+      "creationDate": "2020-06-15T15:43:35+0000",
+      "updateDate": "2026-05-25T06:40:40+0000",
+      "type": "VULNERABILITY",
+      "organization": "haiyahhh",
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "MEDIUM"
+        },
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "kubernetes-goat",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "e470673f-e147-4b95-b35a-2c7d99d479f9",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AZ5d3cceLWI_jCVtyWJq",
+      "rule": "kubernetes:S6431",
+      "severity": "MAJOR",
+      "component": "Haiyahhh_kubernetes-goat:scenarios/docker-bench-security/deployment.yaml",
+      "project": "Haiyahhh_kubernetes-goat",
+      "line": 27,
+      "hash": "a1081d57aadb50ddccd00c04ffb3fce1",
+      "textRange": {
+        "startLine": 27,
+        "endLine": 27,
+        "startOffset": 15,
+        "endOffset": 19
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Make sure it is safe to use host operating system namespaces here.",
+      "effort": "1h",
+      "debt": "1h",
+      "author": "madhuakula@users.noreply.github.com",
+      "tags": [
+        "cwe",
+        "docker",
+        "former-hotspot"
+      ],
+      "creationDate": "2020-06-15T15:43:35+0000",
+      "updateDate": "2026-05-25T06:40:40+0000",
+      "type": "VULNERABILITY",
+      "organization": "haiyahhh",
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "kubernetes-goat",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "e470673f-e147-4b95-b35a-2c7d99d479f9",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AZ5d3cceLWI_jCVtyWJr",
+      "rule": "kubernetes:S6431",
+      "severity": "MAJOR",
+      "component": "Haiyahhh_kubernetes-goat:scenarios/docker-bench-security/deployment.yaml",
+      "project": "Haiyahhh_kubernetes-goat",
+      "line": 28,
+      "hash": "df57956c734e3cb823ac82f2ec2dea8d",
+      "textRange": {
+        "startLine": 28,
+        "endLine": 28,
+        "startOffset": 15,
+        "endOffset": 19
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Make sure it is safe to use host operating system namespaces here.",
+      "effort": "1h",
+      "debt": "1h",
+      "author": "madhuakula@users.noreply.github.com",
+      "tags": [
+        "cwe",
+        "docker",
+        "former-hotspot"
+      ],
+      "creationDate": "2020-06-15T15:43:35+0000",
+      "updateDate": "2026-05-25T06:40:40+0000",
+      "type": "VULNERABILITY",
+      "organization": "haiyahhh",
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "kubernetes-goat",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "e470673f-e147-4b95-b35a-2c7d99d479f9",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AZ5d3cceLWI_jCVtyWJs",
+      "rule": "kubernetes:S6431",
+      "severity": "MAJOR",
+      "component": "Haiyahhh_kubernetes-goat:scenarios/docker-bench-security/deployment.yaml",
+      "project": "Haiyahhh_kubernetes-goat",
+      "line": 29,
+      "hash": "87e10b80cf17358c09929ef03d460d21",
+      "textRange": {
+        "startLine": 29,
+        "endLine": 29,
+        "startOffset": 19,
+        "endOffset": 23
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Make sure it is safe to use host operating system namespaces here.",
+      "effort": "1h",
+      "debt": "1h",
+      "author": "madhuakula@users.noreply.github.com",
+      "tags": [
+        "cwe",
+        "docker",
+        "former-hotspot"
+      ],
+      "creationDate": "2020-06-15T15:43:35+0000",
+      "updateDate": "2026-05-25T06:40:40+0000",
+      "type": "VULNERABILITY",
+      "organization": "haiyahhh",
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "kubernetes-goat",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "e470673f-e147-4b95-b35a-2c7d99d479f9",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AZ5d3cceLWI_jCVtyWJp",
+      "rule": "kubernetes:S6865",
+      "severity": "MAJOR",
+      "component": "Haiyahhh_kubernetes-goat:scenarios/docker-bench-security/deployment.yaml",
+      "project": "Haiyahhh_kubernetes-goat",
+      "line": 57,
+      "hash": "d9e939dad9db0fbf12a7e7ed37d92d0f",
+      "textRange": {
+        "startLine": 57,
+        "endLine": 57,
+        "startOffset": 6,
+        "endOffset": 16
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Bind this resource's automounted service account to RBAC or disable automounting.",
+      "effort": "1h",
+      "debt": "1h",
+      "author": "madhuakula@users.noreply.github.com",
+      "tags": [],
+      "creationDate": "2020-06-15T15:43:35+0000",
+      "updateDate": "2026-05-25T06:40:40+0000",
+      "type": "VULNERABILITY",
+      "organization": "haiyahhh",
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "MEDIUM"
+        },
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "kubernetes-goat",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "e470673f-e147-4b95-b35a-2c7d99d479f9",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AZ5d3cceLWI_jCVtyWJl",
+      "rule": "kubernetes:S6428",
+      "severity": "MAJOR",
+      "component": "Haiyahhh_kubernetes-goat:scenarios/docker-bench-security/deployment.yaml",
+      "project": "Haiyahhh_kubernetes-goat",
+      "line": 70,
+      "hash": "1e4bba206068d00cce6b7aa94fc119a1",
+      "textRange": {
+        "startLine": 70,
+        "endLine": 70,
+        "startOffset": 24,
+        "endOffset": 28
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Ensure that enabling privileged mode is safe here.",
+      "effort": "1h",
+      "debt": "1h",
+      "author": "madhuakula@users.noreply.github.com",
+      "tags": [
+        "cwe",
+        "former-hotspot"
+      ],
+      "creationDate": "2020-06-15T15:43:35+0000",
+      "updateDate": "2026-05-25T06:40:40+0000",
+      "type": "VULNERABILITY",
+      "organization": "haiyahhh",
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "kubernetes-goat",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "e470673f-e147-4b95-b35a-2c7d99d479f9",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AZ5d3cceLWI_jCVtyWJk",
+      "rule": "kubernetes:S5849",
+      "severity": "MAJOR",
+      "component": "Haiyahhh_kubernetes-goat:scenarios/docker-bench-security/deployment.yaml",
+      "project": "Haiyahhh_kubernetes-goat",
+      "line": 72,
+      "hash": "8978c26de1db1ea63365373e3998f798",
+      "textRange": {
+        "startLine": 72,
+        "endLine": 72,
+        "startOffset": 20,
+        "endOffset": 35
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Make sure setting capabilities is safe here.",
+      "effort": "30min",
+      "debt": "30min",
+      "author": "madhuakula@users.noreply.github.com",
+      "tags": [
+        "cwe",
+        "former-hotspot"
+      ],
+      "creationDate": "2020-06-15T15:43:35+0000",
+      "updateDate": "2026-05-25T06:40:40+0000",
+      "type": "VULNERABILITY",
+      "organization": "haiyahhh",
+      "cleanCodeAttribute": "CONVENTIONAL",
+      "cleanCodeAttributeCategory": "CONSISTENT",
+      "impacts": [
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "kubernetes-goat",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "e470673f-e147-4b95-b35a-2c7d99d479f9",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AZ5d3cceLWI_jCVtyWJn",
+      "rule": "kubernetes:S6429",
+      "severity": "MAJOR",
+      "component": "Haiyahhh_kubernetes-goat:scenarios/docker-bench-security/deployment.yaml",
+      "project": "Haiyahhh_kubernetes-goat",
+      "line": 129,
+      "hash": "58c43891abb20877bf2f53e6fc518327",
+      "textRange": {
+        "startLine": 129,
+        "endLine": 129,
+        "startOffset": 18,
+        "endOffset": 38
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Make sure exposing the Docker socket is safe here.",
+      "effort": "1h",
+      "debt": "1h",
+      "author": "madhuakula@users.noreply.github.com",
+      "tags": [
+        "cwe",
+        "former-hotspot"
+      ],
+      "creationDate": "2020-06-15T15:43:35+0000",
+      "updateDate": "2026-05-25T06:40:40+0000",
+      "type": "VULNERABILITY",
+      "organization": "haiyahhh",
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "kubernetes-goat",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "e470673f-e147-4b95-b35a-2c7d99d479f9",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AZ5d3cecLWI_jCVtyWJy",
+      "rule": "kubernetes:S6865",
+      "severity": "MAJOR",
+      "component": "Haiyahhh_kubernetes-goat:scenarios/health-check/deployment.yaml",
+      "project": "Haiyahhh_kubernetes-goat",
+      "line": 53,
+      "hash": "d9e939dad9db0fbf12a7e7ed37d92d0f",
+      "textRange": {
+        "startLine": 53,
+        "endLine": 53,
+        "startOffset": 6,
+        "endOffset": 16
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Bind this resource's automounted service account to RBAC or disable automounting.",
+      "effort": "1h",
+      "debt": "1h",
+      "author": "madhuakula@users.noreply.github.com",
+      "tags": [],
+      "creationDate": "2020-06-15T15:43:35+0000",
+      "updateDate": "2026-05-25T06:40:40+0000",
+      "type": "VULNERABILITY",
+      "organization": "haiyahhh",
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "MEDIUM"
+        },
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "kubernetes-goat",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "e470673f-e147-4b95-b35a-2c7d99d479f9",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AZ5d3cecLWI_jCVtyWJu",
+      "rule": "kubernetes:S6428",
+      "severity": "MAJOR",
+      "component": "Haiyahhh_kubernetes-goat:scenarios/health-check/deployment.yaml",
+      "project": "Haiyahhh_kubernetes-goat",
+      "line": 64,
+      "hash": "1e4bba206068d00cce6b7aa94fc119a1",
+      "textRange": {
+        "startLine": 64,
+        "endLine": 64,
+        "startOffset": 22,
+        "endOffset": 26
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Ensure that enabling privileged mode is safe here.",
+      "effort": "1h",
+      "debt": "1h",
+      "author": "madhuakula@users.noreply.github.com",
+      "tags": [
+        "cwe",
+        "former-hotspot"
+      ],
+      "creationDate": "2020-06-15T15:43:35+0000",
+      "updateDate": "2026-05-25T06:40:40+0000",
+      "type": "VULNERABILITY",
+      "organization": "haiyahhh",
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "kubernetes-goat",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "e470673f-e147-4b95-b35a-2c7d99d479f9",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AZ5d3cfFLWI_jCVtyWKP",
+      "rule": "kubernetes:S6864",
+      "severity": "MAJOR",
+      "component": "Haiyahhh_kubernetes-goat:scenarios/hunger-check/deployment.yaml",
+      "project": "Haiyahhh_kubernetes-goat",
+      "line": 71,
+      "hash": "9cead3479204dbe1df1888b98f510e27",
+      "textRange": {
+        "startLine": 71,
+        "endLine": 71,
+        "startOffset": 8,
+        "endOffset": 12
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Specify a memory limit for this container.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "madhuakula@users.noreply.github.com",
+      "tags": [],
+      "creationDate": "2020-06-15T15:43:35+0000",
+      "updateDate": "2026-05-25T06:40:40+0000",
+      "type": "VULNERABILITY",
+      "organization": "haiyahhh",
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "MEDIUM"
+        },
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "kubernetes-goat",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "e470673f-e147-4b95-b35a-2c7d99d479f9",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AZ5d3cfVLWI_jCVtyWKc",
+      "rule": "kubernetes:S6865",
+      "severity": "MAJOR",
+      "component": "Haiyahhh_kubernetes-goat:scenarios/internal-proxy/deployment.yaml",
+      "project": "Haiyahhh_kubernetes-goat",
+      "line": 17,
+      "hash": "d9e939dad9db0fbf12a7e7ed37d92d0f",
+      "textRange": {
+        "startLine": 17,
+        "endLine": 17,
+        "startOffset": 6,
+        "endOffset": 16
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Bind this resource's automounted service account to RBAC or disable automounting.",
+      "effort": "1h",
+      "debt": "1h",
+      "author": "madhuakula@users.noreply.github.com",
+      "tags": [],
+      "creationDate": "2020-06-15T15:43:35+0000",
+      "updateDate": "2026-05-25T06:40:40+0000",
+      "type": "VULNERABILITY",
+      "organization": "haiyahhh",
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "MEDIUM"
+        },
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "kubernetes-goat",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "e470673f-e147-4b95-b35a-2c7d99d479f9",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AZ5d3ccLLWI_jCVtyWJb",
+      "rule": "kubernetes:S6431",
+      "severity": "MAJOR",
+      "component": "Haiyahhh_kubernetes-goat:scenarios/kube-bench-security/master-job.yaml",
+      "project": "Haiyahhh_kubernetes-goat",
+      "line": 9,
+      "hash": "a1081d57aadb50ddccd00c04ffb3fce1",
+      "textRange": {
+        "startLine": 9,
+        "endLine": 9,
+        "startOffset": 15,
+        "endOffset": 19
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Make sure it is safe to use host operating system namespaces here.",
+      "effort": "1h",
+      "debt": "1h",
+      "author": "madhuakula@users.noreply.github.com",
+      "tags": [
+        "cwe",
+        "docker",
+        "former-hotspot"
+      ],
+      "creationDate": "2020-06-15T15:43:35+0000",
+      "updateDate": "2026-05-25T06:40:40+0000",
+      "type": "VULNERABILITY",
+      "organization": "haiyahhh",
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "kubernetes-goat",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "e470673f-e147-4b95-b35a-2c7d99d479f9",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AZ5d3ccLLWI_jCVtyWJZ",
+      "rule": "kubernetes:S6865",
+      "severity": "MAJOR",
+      "component": "Haiyahhh_kubernetes-goat:scenarios/kube-bench-security/master-job.yaml",
+      "project": "Haiyahhh_kubernetes-goat",
+      "line": 27,
+      "hash": "d9e939dad9db0fbf12a7e7ed37d92d0f",
+      "textRange": {
+        "startLine": 27,
+        "endLine": 27,
+        "startOffset": 6,
+        "endOffset": 16
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Bind this resource's automounted service account to RBAC or disable automounting.",
+      "effort": "1h",
+      "debt": "1h",
+      "author": "madhuakula@users.noreply.github.com",
+      "tags": [],
+      "creationDate": "2020-06-15T15:43:35+0000",
+      "updateDate": "2026-05-25T06:40:40+0000",
+      "type": "VULNERABILITY",
+      "organization": "haiyahhh",
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "MEDIUM"
+        },
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "kubernetes-goat",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "e470673f-e147-4b95-b35a-2c7d99d479f9",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AZ5d3ccLLWI_jCVtyWJX",
+      "rule": "kubernetes:S6864",
+      "severity": "MAJOR",
+      "component": "Haiyahhh_kubernetes-goat:scenarios/kube-bench-security/master-job.yaml",
+      "project": "Haiyahhh_kubernetes-goat",
+      "line": 28,
+      "hash": "21ca925268813b405d6fb8707a5ce80f",
+      "textRange": {
+        "startLine": 28,
+        "endLine": 28,
+        "startOffset": 10,
+        "endOffset": 14
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Specify a memory limit for this container.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "madhuakula@users.noreply.github.com",
+      "tags": [],
+      "creationDate": "2020-06-15T15:43:35+0000",
+      "updateDate": "2026-05-25T06:40:40+0000",
+      "type": "VULNERABILITY",
+      "organization": "haiyahhh",
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "MEDIUM"
+        },
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "kubernetes-goat",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "e470673f-e147-4b95-b35a-2c7d99d479f9",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AZ5d3calLWI_jCVtyWJU",
+      "rule": "kubernetes:S6431",
+      "severity": "MAJOR",
+      "component": "Haiyahhh_kubernetes-goat:scenarios/kube-bench-security/node-job.yaml",
+      "project": "Haiyahhh_kubernetes-goat",
+      "line": 9,
+      "hash": "a1081d57aadb50ddccd00c04ffb3fce1",
+      "textRange": {
+        "startLine": 9,
+        "endLine": 9,
+        "startOffset": 15,
+        "endOffset": 19
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Make sure it is safe to use host operating system namespaces here.",
+      "effort": "1h",
+      "debt": "1h",
+      "author": "madhuakula@users.noreply.github.com",
+      "tags": [
+        "cwe",
+        "docker",
+        "former-hotspot"
+      ],
+      "creationDate": "2020-06-15T15:43:35+0000",
+      "updateDate": "2026-05-25T06:40:40+0000",
+      "type": "VULNERABILITY",
+      "organization": "haiyahhh",
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "kubernetes-goat",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "e470673f-e147-4b95-b35a-2c7d99d479f9",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AZ5d3calLWI_jCVtyWJS",
+      "rule": "kubernetes:S6865",
+      "severity": "MAJOR",
+      "component": "Haiyahhh_kubernetes-goat:scenarios/kube-bench-security/node-job.yaml",
+      "project": "Haiyahhh_kubernetes-goat",
+      "line": 10,
+      "hash": "d9e939dad9db0fbf12a7e7ed37d92d0f",
+      "textRange": {
+        "startLine": 10,
+        "endLine": 10,
+        "startOffset": 6,
+        "endOffset": 16
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Bind this resource's automounted service account to RBAC or disable automounting.",
+      "effort": "1h",
+      "debt": "1h",
+      "author": "madhuakula@users.noreply.github.com",
+      "tags": [],
+      "creationDate": "2020-06-15T15:43:35+0000",
+      "updateDate": "2026-05-25T06:40:40+0000",
+      "type": "VULNERABILITY",
+      "organization": "haiyahhh",
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "MEDIUM"
+        },
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "kubernetes-goat",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "e470673f-e147-4b95-b35a-2c7d99d479f9",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AZ5d3calLWI_jCVtyWJQ",
+      "rule": "kubernetes:S6864",
+      "severity": "MAJOR",
+      "component": "Haiyahhh_kubernetes-goat:scenarios/kube-bench-security/node-job.yaml",
+      "project": "Haiyahhh_kubernetes-goat",
+      "line": 11,
+      "hash": "21ca925268813b405d6fb8707a5ce80f",
+      "textRange": {
+        "startLine": 11,
+        "endLine": 11,
+        "startOffset": 10,
+        "endOffset": 14
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Specify a memory limit for this container.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "madhuakula@users.noreply.github.com",
+      "tags": [],
+      "creationDate": "2020-06-15T15:43:35+0000",
+      "updateDate": "2026-05-25T06:40:40+0000",
+      "type": "VULNERABILITY",
+      "organization": "haiyahhh",
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "MEDIUM"
+        },
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "kubernetes-goat",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "e470673f-e147-4b95-b35a-2c7d99d479f9",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AZ5d3ce9LWI_jCVtyWKK",
+      "rule": "kubernetes:S6865",
+      "severity": "MAJOR",
+      "component": "Haiyahhh_kubernetes-goat:scenarios/kubernetes-goat-home/deployment.yaml",
+      "project": "Haiyahhh_kubernetes-goat",
+      "line": 15,
+      "hash": "d9e939dad9db0fbf12a7e7ed37d92d0f",
+      "textRange": {
+        "startLine": 15,
+        "endLine": 15,
+        "startOffset": 6,
+        "endOffset": 16
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Bind this resource's automounted service account to RBAC or disable automounting.",
+      "effort": "1h",
+      "debt": "1h",
+      "author": "madhuakula@users.noreply.github.com",
+      "tags": [],
+      "creationDate": "2020-06-15T15:43:35+0000",
+      "updateDate": "2026-05-25T06:40:40+0000",
+      "type": "VULNERABILITY",
+      "organization": "haiyahhh",
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "MEDIUM"
+        },
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "kubernetes-goat",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "e470673f-e147-4b95-b35a-2c7d99d479f9",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AZ5d3caMLWI_jCVtyWI-",
+      "rule": "kubernetes:S6865",
+      "severity": "MAJOR",
+      "component": "Haiyahhh_kubernetes-goat:scenarios/metadata-db/templates/deployment.yaml",
+      "project": "Haiyahhh_kubernetes-goat",
+      "line": 22,
+      "hash": "d9e939dad9db0fbf12a7e7ed37d92d0f",
+      "textRange": {
+        "startLine": 22,
+        "endLine": 22,
+        "startOffset": 6,
+        "endOffset": 16
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Bind this resource's automounted service account to RBAC or disable automounting.",
+      "effort": "1h",
+      "debt": "1h",
+      "author": "madhuakula@users.noreply.github.com",
+      "tags": [],
+      "creationDate": "2020-06-15T15:43:35+0000",
+      "updateDate": "2026-05-25T06:40:40+0000",
+      "type": "VULNERABILITY",
+      "organization": "haiyahhh",
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "MEDIUM"
+        },
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "kubernetes-goat",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "e470673f-e147-4b95-b35a-2c7d99d479f9",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AZ5d3caULWI_jCVtyWJC",
+      "rule": "kubernetes:S6865",
+      "severity": "MAJOR",
+      "component": "Haiyahhh_kubernetes-goat:scenarios/metadata-db/templates/tests/test-connection.yaml",
+      "project": "Haiyahhh_kubernetes-goat",
+      "line": 13,
+      "hash": "d9e939dad9db0fbf12a7e7ed37d92d0f",
+      "textRange": {
+        "startLine": 13,
+        "endLine": 13,
+        "startOffset": 2,
+        "endOffset": 12
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Bind this resource's automounted service account to RBAC or disable automounting.",
+      "effort": "1h",
+      "debt": "1h",
+      "author": "madhuakula@users.noreply.github.com",
+      "tags": [],
+      "creationDate": "2020-06-15T15:43:35+0000",
+      "updateDate": "2026-05-25T06:40:40+0000",
+      "type": "VULNERABILITY",
+      "organization": "haiyahhh",
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "MEDIUM"
+        },
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "kubernetes-goat",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "e470673f-e147-4b95-b35a-2c7d99d479f9",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AZ5d3caULWI_jCVtyWJA",
+      "rule": "kubernetes:S6864",
+      "severity": "MAJOR",
+      "component": "Haiyahhh_kubernetes-goat:scenarios/metadata-db/templates/tests/test-connection.yaml",
+      "project": "Haiyahhh_kubernetes-goat",
+      "line": 14,
+      "hash": "45c7676f33ba2d39db7af759057d7e35",
+      "textRange": {
+        "startLine": 14,
+        "endLine": 14,
+        "startOffset": 6,
+        "endOffset": 10
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Specify a memory limit for this container.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "madhuakula@users.noreply.github.com",
+      "tags": [],
+      "creationDate": "2020-06-15T15:43:35+0000",
+      "updateDate": "2026-05-25T06:40:40+0000",
+      "type": "VULNERABILITY",
+      "organization": "haiyahhh",
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "MEDIUM"
+        },
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "kubernetes-goat",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "e470673f-e147-4b95-b35a-2c7d99d479f9",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AZ5d3ce0LWI_jCVtyWKF",
+      "rule": "kubernetes:S6865",
+      "severity": "MAJOR",
+      "component": "Haiyahhh_kubernetes-goat:scenarios/poor-registry/deployment.yaml",
+      "project": "Haiyahhh_kubernetes-goat",
+      "line": 15,
+      "hash": "d9e939dad9db0fbf12a7e7ed37d92d0f",
+      "textRange": {
+        "startLine": 15,
+        "endLine": 15,
+        "startOffset": 6,
+        "endOffset": 16
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Bind this resource's automounted service account to RBAC or disable automounting.",
+      "effort": "1h",
+      "debt": "1h",
+      "author": "madhuakula@users.noreply.github.com",
+      "tags": [],
+      "creationDate": "2020-06-15T15:43:35+0000",
+      "updateDate": "2026-05-25T06:40:40+0000",
+      "type": "VULNERABILITY",
+      "organization": "haiyahhh",
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "MEDIUM"
+        },
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "kubernetes-goat",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "e470673f-e147-4b95-b35a-2c7d99d479f9",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AZ5d3cadLWI_jCVtyWJM",
+      "rule": "kubernetes:S6431",
+      "severity": "MAJOR",
+      "component": "Haiyahhh_kubernetes-goat:scenarios/system-monitor/deployment.yaml",
+      "project": "Haiyahhh_kubernetes-goat",
+      "line": 25,
+      "hash": "a1081d57aadb50ddccd00c04ffb3fce1",
+      "textRange": {
+        "startLine": 25,
+        "endLine": 25,
+        "startOffset": 15,
+        "endOffset": 19
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Make sure it is safe to use host operating system namespaces here.",
+      "effort": "1h",
+      "debt": "1h",
+      "author": "madhuakula@users.noreply.github.com",
+      "tags": [
+        "cwe",
+        "docker",
+        "former-hotspot"
+      ],
+      "creationDate": "2020-06-15T15:43:35+0000",
+      "updateDate": "2026-05-25T06:40:40+0000",
+      "type": "VULNERABILITY",
+      "organization": "haiyahhh",
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "kubernetes-goat",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "e470673f-e147-4b95-b35a-2c7d99d479f9",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AZ5d3cadLWI_jCVtyWJN",
+      "rule": "kubernetes:S6431",
+      "severity": "MAJOR",
+      "component": "Haiyahhh_kubernetes-goat:scenarios/system-monitor/deployment.yaml",
+      "project": "Haiyahhh_kubernetes-goat",
+      "line": 26,
+      "hash": "df57956c734e3cb823ac82f2ec2dea8d",
+      "textRange": {
+        "startLine": 26,
+        "endLine": 26,
+        "startOffset": 15,
+        "endOffset": 19
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Make sure it is safe to use host operating system namespaces here.",
+      "effort": "1h",
+      "debt": "1h",
+      "author": "madhuakula@users.noreply.github.com",
+      "tags": [
+        "cwe",
+        "docker",
+        "former-hotspot"
+      ],
+      "creationDate": "2020-06-15T15:43:35+0000",
+      "updateDate": "2026-05-25T06:40:40+0000",
+      "type": "VULNERABILITY",
+      "organization": "haiyahhh",
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "kubernetes-goat",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "e470673f-e147-4b95-b35a-2c7d99d479f9",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AZ5d3cadLWI_jCVtyWJI",
+      "rule": "kubernetes:S6865",
+      "severity": "MAJOR",
+      "component": "Haiyahhh_kubernetes-goat:scenarios/system-monitor/deployment.yaml",
+      "project": "Haiyahhh_kubernetes-goat",
+      "line": 32,
+      "hash": "d9e939dad9db0fbf12a7e7ed37d92d0f",
+      "textRange": {
+        "startLine": 32,
+        "endLine": 32,
+        "startOffset": 6,
+        "endOffset": 16
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Bind this resource's automounted service account to RBAC or disable automounting.",
+      "effort": "1h",
+      "debt": "1h",
+      "author": "madhuakula@users.noreply.github.com",
+      "tags": [],
+      "creationDate": "2020-06-15T15:43:35+0000",
+      "updateDate": "2026-05-25T06:40:40+0000",
+      "type": "VULNERABILITY",
+      "organization": "haiyahhh",
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "MEDIUM"
+        },
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "kubernetes-goat",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "e470673f-e147-4b95-b35a-2c7d99d479f9",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AZ5d3cadLWI_jCVtyWJK",
+      "rule": "kubernetes:S6870",
+      "severity": "MAJOR",
+      "component": "Haiyahhh_kubernetes-goat:scenarios/system-monitor/deployment.yaml",
+      "project": "Haiyahhh_kubernetes-goat",
+      "line": 33,
+      "hash": "ab70b5200aa13229c824d3a555b7061a",
+      "textRange": {
+        "startLine": 33,
+        "endLine": 33,
+        "startOffset": 8,
+        "endOffset": 12
+      },
+      "flows": [
+        {
+          "locations": [
+            {
+              "component": "Haiyahhh_kubernetes-goat:scenarios/system-monitor/deployment.yaml",
+              "textRange": {
+                "startLine": 45,
+                "endLine": 45,
+                "startOffset": 10,
+                "endOffset": 14
+              },
+              "msg": "for this volume mount"
+            }
+          ]
+        }
+      ],
+      "status": "OPEN",
+      "message": "Specify a storage limit for this container.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "madhuakula@users.noreply.github.com",
+      "tags": [],
+      "creationDate": "2020-06-15T15:43:35+0000",
+      "updateDate": "2026-05-25T06:40:40+0000",
+      "type": "VULNERABILITY",
+      "organization": "haiyahhh",
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "MEDIUM"
+        },
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "kubernetes-goat",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "e470673f-e147-4b95-b35a-2c7d99d479f9",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AZ5d3cadLWI_jCVtyWJJ",
+      "rule": "kubernetes:S6430",
+      "severity": "MAJOR",
+      "component": "Haiyahhh_kubernetes-goat:scenarios/system-monitor/deployment.yaml",
+      "project": "Haiyahhh_kubernetes-goat",
+      "line": 40,
+      "hash": "6382f7197f8f10f27d1c45cc1db257c0",
+      "textRange": {
+        "startLine": 40,
+        "endLine": 40,
+        "startOffset": 36,
+        "endOffset": 40
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Make sure that enabling privilege escalation is safe here.",
+      "effort": "1h",
+      "debt": "1h",
+      "author": "madhuakula@users.noreply.github.com",
+      "tags": [
+        "cwe",
+        "former-hotspot"
+      ],
+      "creationDate": "2020-06-15T15:43:35+0000",
+      "updateDate": "2026-05-25T06:40:40+0000",
+      "type": "VULNERABILITY",
+      "organization": "haiyahhh",
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "kubernetes-goat",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "e470673f-e147-4b95-b35a-2c7d99d479f9",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AZ5d3cadLWI_jCVtyWJG",
+      "rule": "kubernetes:S6428",
+      "severity": "MAJOR",
+      "component": "Haiyahhh_kubernetes-goat:scenarios/system-monitor/deployment.yaml",
+      "project": "Haiyahhh_kubernetes-goat",
+      "line": 41,
+      "hash": "1e4bba206068d00cce6b7aa94fc119a1",
+      "textRange": {
+        "startLine": 41,
+        "endLine": 41,
+        "startOffset": 22,
+        "endOffset": 26
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Ensure that enabling privileged mode is safe here.",
+      "effort": "1h",
+      "debt": "1h",
+      "author": "madhuakula@users.noreply.github.com",
+      "tags": [
+        "cwe",
+        "former-hotspot"
+      ],
+      "creationDate": "2020-06-15T15:43:35+0000",
+      "updateDate": "2026-05-25T06:40:40+0000",
+      "type": "VULNERABILITY",
+      "organization": "haiyahhh",
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "kubernetes-goat",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "e470673f-e147-4b95-b35a-2c7d99d479f9",
+      "lastChangeSource": "ANALYSIS"
+    }
+  ],
+  "components": [
+    {
+      "organization": "haiyahhh",
+      "key": "Haiyahhh_kubernetes-goat:infrastructure/info-app/app.py",
+      "uuid": "AZ5d3b9_LWI_jCVtyWG5",
+      "enabled": true,
+      "qualifier": "FIL",
+      "name": "app.py",
+      "longName": "infrastructure/info-app/app.py",
+      "path": "infrastructure/info-app/app.py"
+    },
+    {
+      "organization": "haiyahhh",
+      "key": "Haiyahhh_kubernetes-goat:infrastructure/internal-api/code/server.js",
+      "uuid": "AZ5d3b9_LWI_jCVtyWGU",
+      "enabled": true,
+      "qualifier": "FIL",
+      "name": "server.js",
+      "longName": "infrastructure/internal-api/code/server.js",
+      "path": "infrastructure/internal-api/code/server.js"
+    },
+    {
+      "organization": "haiyahhh",
+      "key": "Haiyahhh_kubernetes-goat:scenarios/health-check/deployment-simple-alternative.yaml",
+      "uuid": "AZ5d3b9_LWI_jCVtyWHV",
+      "enabled": true,
+      "qualifier": "FIL",
+      "name": "deployment-simple-alternative.yaml",
+      "longName": "scenarios/health-check/deployment-simple-alternative.yaml",
+      "path": "scenarios/health-check/deployment-simple-alternative.yaml"
+    },
+    {
+      "organization": "haiyahhh",
+      "key": "Haiyahhh_kubernetes-goat:scenarios/health-check/deployment.yaml",
+      "uuid": "AZ5d3b9_LWI_jCVtyWHU",
+      "enabled": true,
+      "qualifier": "FIL",
+      "name": "deployment.yaml",
+      "longName": "scenarios/health-check/deployment.yaml",
+      "path": "scenarios/health-check/deployment.yaml"
+    },
+    {
+      "organization": "haiyahhh",
+      "key": "Haiyahhh_kubernetes-goat:scenarios/cache-store/deployment.yaml",
+      "uuid": "AZ5d3b9_LWI_jCVtyWHX",
+      "enabled": true,
+      "qualifier": "FIL",
+      "name": "deployment.yaml",
+      "longName": "scenarios/cache-store/deployment.yaml",
+      "path": "scenarios/cache-store/deployment.yaml"
+    },
+    {
+      "organization": "haiyahhh",
+      "key": "Haiyahhh_kubernetes-goat:infrastructure/internal-api/code/index.html",
+      "uuid": "AZ5d3b9_LWI_jCVtyWGV",
+      "enabled": true,
+      "qualifier": "FIL",
+      "name": "index.html",
+      "longName": "infrastructure/internal-api/code/index.html",
+      "path": "infrastructure/internal-api/code/index.html"
+    },
+    {
+      "organization": "haiyahhh",
+      "key": "Haiyahhh_kubernetes-goat:scenarios/poor-registry/deployment.yaml",
+      "uuid": "AZ5d3b9_LWI_jCVtyWHZ",
+      "enabled": true,
+      "qualifier": "FIL",
+      "name": "deployment.yaml",
+      "longName": "scenarios/poor-registry/deployment.yaml",
+      "path": "scenarios/poor-registry/deployment.yaml"
+    },
+    {
+      "organization": "haiyahhh",
+      "key": "Haiyahhh_kubernetes-goat:scenarios/kubernetes-goat-home/deployment.yaml",
+      "uuid": "AZ5d3b9_LWI_jCVtyWHb",
+      "enabled": true,
+      "qualifier": "FIL",
+      "name": "deployment.yaml",
+      "longName": "scenarios/kubernetes-goat-home/deployment.yaml",
+      "path": "scenarios/kubernetes-goat-home/deployment.yaml"
+    },
+    {
+      "organization": "haiyahhh",
+      "key": "Haiyahhh_kubernetes-goat:scenarios/hunger-check/deployment.yaml",
+      "uuid": "AZ5d3b9_LWI_jCVtyWHd",
+      "enabled": true,
+      "qualifier": "FIL",
+      "name": "deployment.yaml",
+      "longName": "scenarios/hunger-check/deployment.yaml",
+      "path": "scenarios/hunger-check/deployment.yaml"
+    },
+    {
+      "organization": "haiyahhh",
+      "key": "Haiyahhh_kubernetes-goat:scenarios/metadata-db/templates/tests/test-connection.yaml",
+      "uuid": "AZ5d3b9_LWI_jCVtyWHD",
+      "enabled": true,
+      "qualifier": "FIL",
+      "name": "test-connection.yaml",
+      "longName": "scenarios/metadata-db/templates/tests/test-connection.yaml",
+      "path": "scenarios/metadata-db/templates/tests/test-connection.yaml"
+    },
+    {
+      "organization": "haiyahhh",
+      "key": "Haiyahhh_kubernetes-goat:platforms/aws-setup/aws-kind-ec2-cdk/aws_kind_ec2_cdk/aws_kind_ec2_cdk_stack.py",
+      "uuid": "AZ5d3b9_LWI_jCVtyWIE",
+      "enabled": true,
+      "qualifier": "FIL",
+      "name": "aws_kind_ec2_cdk_stack.py",
+      "longName": "platforms/aws-setup/aws-kind-ec2-cdk/aws_kind_ec2_cdk/aws_kind_ec2_cdk_stack.py",
+      "path": "platforms/aws-setup/aws-kind-ec2-cdk/aws_kind_ec2_cdk/aws_kind_ec2_cdk_stack.py"
+    },
+    {
+      "organization": "haiyahhh",
+      "key": "Haiyahhh_kubernetes-goat:scenarios/metadata-db/templates/deployment.yaml",
+      "uuid": "AZ5d3b9_LWI_jCVtyWHC",
+      "enabled": true,
+      "qualifier": "FIL",
+      "name": "deployment.yaml",
+      "longName": "scenarios/metadata-db/templates/deployment.yaml",
+      "path": "scenarios/metadata-db/templates/deployment.yaml"
+    },
+    {
+      "organization": "haiyahhh",
+      "key": "Haiyahhh_kubernetes-goat:infrastructure/metadata-db/go.mod",
+      "uuid": "AZ5d3b9_LWI_jCVtyWGe",
+      "enabled": true,
+      "qualifier": "FIL",
+      "name": "go.mod",
+      "longName": "infrastructure/metadata-db/go.mod",
+      "path": "infrastructure/metadata-db/go.mod"
+    },
+    {
+      "organization": "haiyahhh",
+      "key": "Haiyahhh_kubernetes-goat:scenarios/build-code/deployment.yaml",
+      "uuid": "AZ5d3b9_LWI_jCVtyWHf",
+      "enabled": true,
+      "qualifier": "FIL",
+      "name": "deployment.yaml",
+      "longName": "scenarios/build-code/deployment.yaml",
+      "path": "scenarios/build-code/deployment.yaml"
+    },
+    {
+      "organization": "haiyahhh",
+      "key": "Haiyahhh_kubernetes-goat:scenarios/internal-proxy/deployment.yaml",
+      "uuid": "AZ5d3b9_LWI_jCVtyWHh",
+      "enabled": true,
+      "qualifier": "FIL",
+      "name": "deployment.yaml",
+      "longName": "scenarios/internal-proxy/deployment.yaml",
+      "path": "scenarios/internal-proxy/deployment.yaml"
+    },
+    {
+      "organization": "haiyahhh",
+      "key": "Haiyahhh_kubernetes-goat",
+      "uuid": "AZ5F7sdMAtRYWgdpywp4",
+      "enabled": true,
+      "qualifier": "TRK",
+      "name": "kubernetes-goat",
+      "longName": "kubernetes-goat"
+    },
+    {
+      "organization": "haiyahhh",
+      "key": "Haiyahhh_kubernetes-goat:scenarios/hidden-in-layers/deployment.yaml",
+      "uuid": "AZ5d3b9_LWI_jCVtyWHj",
+      "enabled": true,
+      "qualifier": "FIL",
+      "name": "deployment.yaml",
+      "longName": "scenarios/hidden-in-layers/deployment.yaml",
+      "path": "scenarios/hidden-in-layers/deployment.yaml"
+    },
+    {
+      "organization": "haiyahhh",
+      "key": "Haiyahhh_kubernetes-goat:scenarios/system-monitor/deployment.yaml",
+      "uuid": "AZ5d3b9_LWI_jCVtyWHJ",
+      "enabled": true,
+      "qualifier": "FIL",
+      "name": "deployment.yaml",
+      "longName": "scenarios/system-monitor/deployment.yaml",
+      "path": "scenarios/system-monitor/deployment.yaml"
+    },
+    {
+      "organization": "haiyahhh",
+      "key": "Haiyahhh_kubernetes-goat:infrastructure/helm-tiller/pwnchart/templates/clusterrole.yaml",
+      "uuid": "AZ5d3b9_LWI_jCVtyWGk",
+      "enabled": true,
+      "qualifier": "FIL",
+      "name": "clusterrole.yaml",
+      "longName": "infrastructure/helm-tiller/pwnchart/templates/clusterrole.yaml",
+      "path": "infrastructure/helm-tiller/pwnchart/templates/clusterrole.yaml"
+    },
+    {
+      "organization": "haiyahhh",
+      "key": "Haiyahhh_kubernetes-goat:scenarios/kube-bench-security/node-job.yaml",
+      "uuid": "AZ5d3b9_LWI_jCVtyWHN",
+      "enabled": true,
+      "qualifier": "FIL",
+      "name": "node-job.yaml",
+      "longName": "scenarios/kube-bench-security/node-job.yaml",
+      "path": "scenarios/kube-bench-security/node-job.yaml"
+    },
+    {
+      "organization": "haiyahhh",
+      "key": "Haiyahhh_kubernetes-goat:scenarios/kube-bench-security/master-job.yaml",
+      "uuid": "AZ5d3b9_LWI_jCVtyWHO",
+      "enabled": true,
+      "qualifier": "FIL",
+      "name": "master-job.yaml",
+      "longName": "scenarios/kube-bench-security/master-job.yaml",
+      "path": "scenarios/kube-bench-security/master-job.yaml"
+    },
+    {
+      "organization": "haiyahhh",
+      "key": "Haiyahhh_kubernetes-goat:infrastructure/health-check/views/index.html",
+      "uuid": "AZ5d3b9_LWI_jCVtyWG0",
+      "enabled": true,
+      "qualifier": "FIL",
+      "name": "index.html",
+      "longName": "infrastructure/health-check/views/index.html",
+      "path": "infrastructure/health-check/views/index.html"
+    },
+    {
+      "organization": "haiyahhh",
+      "key": "Haiyahhh_kubernetes-goat:scenarios/batch-check/job.yaml",
+      "uuid": "AZ5d3b9_LWI_jCVtyWHQ",
+      "enabled": true,
+      "qualifier": "FIL",
+      "name": "job.yaml",
+      "longName": "scenarios/batch-check/job.yaml",
+      "path": "scenarios/batch-check/job.yaml"
+    },
+    {
+      "organization": "haiyahhh",
+      "key": "Haiyahhh_kubernetes-goat:scenarios/docker-bench-security/deployment.yaml",
+      "uuid": "AZ5d3b9_LWI_jCVtyWHS",
+      "enabled": true,
+      "qualifier": "FIL",
+      "name": "deployment.yaml",
+      "longName": "scenarios/docker-bench-security/deployment.yaml",
+      "path": "scenarios/docker-bench-security/deployment.yaml"
+    }
+  ],
+  "organizations": [
+    {
+      "key": "haiyahhh",
+      "name": "Đặng Minh Hoàng"
+    }
+  ],
+  "facets": []
+}

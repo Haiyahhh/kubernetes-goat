@@ -1,0 +1,74 @@
+name: DevSecOps Pipeline - K8s Goat
+
+on:
+  push:
+    branches: [ "main", "master" ]
+  pull_request:
+    branches: [ "main", "master" ]
+
+jobs:
+  sast-semgrep:
+    name: SAST (Semgrep)
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Run Semgrep CI
+        uses: returntocorp/semgrep-action@v1
+        with:
+          config: >- 
+            p/ci 
+            p/kubernetes 
+            p/dockerfile 
+            p/golang 
+            p/nodejs
+          # Fail the build if Semgrep finds high-severity issues (Quality Gate)
+          auditOn: push
+
+  sast-sonarqube:
+    name: SAST (SonarQube Cloud)
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # Required for accurate SonarQube blame information
+
+      - name: SonarQube Scan
+        uses: SonarSource/sonarcloud-github-action@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+        with:
+          args: >
+            -Dsonar.projectKey=your_project_key
+            -Dsonar.organization=your_organization_key
+            -Dsonar.sources=.
+            -Dsonar.qualitygate.wait=true # Quality Gate: Pipeline fails if gate fails
+
+  sca-snyk:
+    name: SCA (Snyk IaC & Dependencies)
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js (for Snyk CLI)
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: Install Snyk
+        run: npm install -g snyk
+
+      - name: Snyk Test (Open Source Dependencies)
+        run: snyk test --all-projects --severity-threshold=high
+        env:
+          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+
+      - name: Snyk IaC Test (Kubernetes YAML & Dockerfiles)
+        run: snyk iac test ./scenarios ./infrastructure --severity-threshold=high
+        env:
+          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+        # continue-on-error: true # Uncomment this if you want to allow IaC flaws initially
