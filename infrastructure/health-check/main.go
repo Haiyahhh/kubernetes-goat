@@ -23,15 +23,22 @@ func main() {
 		})
 	})
 
+	// a POST endpoint that takes in a Fiber Context 
 	app.Post("/", func(c *fiber.Ctx) error {
+
+		// Extract the value of the `endpoint` parameter from the request
 		endpoint := c.FormValue("endpoint")
 
+		// Prepare the ping command
+		// VULNERABLE: OS Command Injection
 		cmd := exec.Command("sh", "-c", "ping -c 2 "+endpoint)
 
 		type error interface {
 			Error() string
 		}
+		
 		var finalOutput string
+
 		//run the command
 		if output, err := cmd.Output(); err != nil {
 			finalOutput = err.Error()
@@ -39,6 +46,7 @@ func main() {
 			finalOutput = string(output)
 		}
 
+		// Render the output of the file to the template.
 		return c.Render("index", fiber.Map{
 			"Title":  "Ping Your Servers",
 			"Output": finalOutput,
