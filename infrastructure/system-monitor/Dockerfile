@@ -13,6 +13,13 @@ RUN apt-get update && apt-get install -y htop \
     wget https://github.com/yudai/gotty/releases/download/v2.0.0-alpha.3/${GOTTY} \
     && tar -xvzf ${GOTTY}; mv gotty /usr/local/bin/gotty
 
+# ==========================================
+# REMEDIATION: Section 5.3 (Missing USER Directive)
+# Define non-root user to prevent unrestricted root access
+# ==========================================
+RUN groupadd -r monitorgroup && useradd -r -g monitorgroup monitoruser
+USER monitoruser
+
 EXPOSE 8080
 
 CMD [ "gotty", "-w", "bash" ]
