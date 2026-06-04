@@ -22,6 +22,7 @@ spec:
       labels:
         app: system-monitor
     spec:
+      automountServiceAccountToken: false
       # ==========================================
       # REMEDIATION: Section 5.2 (host namespace sharing)
       # Remove host namespace sharing
