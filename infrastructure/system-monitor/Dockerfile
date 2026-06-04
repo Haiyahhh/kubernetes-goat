@@ -17,8 +17,8 @@ RUN apt-get update && apt-get install -y htop \
 # REMEDIATION: Section 5.3 (Missing USER Directive)
 # Define non-root user to prevent unrestricted root access
 # ==========================================
-RUN groupadd -r monitorgroup && useradd -r -g monitorgroup monitoruser
-USER monitoruser
+RUN groupadd -g 10001 monitorgroup && useradd -u 10001 -g 10001 -m -s /bin/bash monitoruser
+USER 10001
 
 EXPOSE 8080
 

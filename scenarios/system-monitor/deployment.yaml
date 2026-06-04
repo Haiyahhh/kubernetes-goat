@@ -22,13 +22,23 @@ spec:
       labels:
         app: system-monitor
     spec:
-      hostPID: true
-      hostIPC: true
+      # ==========================================
+      # REMEDIATION: Section 5.2 (host namespace sharing)
+      # Remove host namespace sharing
+      # ==========================================
+      hostPID: false
+      hostIPC: false
       #hostNetwork: true
-      volumes:
-      - name: host-filesystem
-        hostPath:
-          path: /
+
+      # ==========================================
+      # REMEDIATION: Section 5.2 (overly permissive hostPath mount)
+      # Removed the mount targeting '/''
+      # ==========================================
+      # volumes:
+      # - name: host-filesystem
+      #   hostPath:
+      #     path: /
+      
       containers:
       - name: system-monitor
         image: secure-system-monitor:v1
@@ -37,13 +47,23 @@ spec:
             memory: "50Mi"
             cpu: "20m"
         securityContext:
-          allowPrivilegeEscalation: true
-          privileged: true
+          # ==========================================
+          # REMEDIATION: Section 5.2 (privilege escalation)
+          # Prevent privilege escalation
+          # ==========================================
+          allowPrivilegeEscalation: false
+          privileged: false
+          runAsNonRoot: true
         ports:
         - containerPort: 8080
-        volumeMounts:
-        - name: host-filesystem
-          mountPath: /host-system
+        
+        # ==========================================
+        # REMEDIATION: Section 5.2 (Overly privilege mount)
+        # Remove the volumnMount targeting /host-system
+        # ==========================================
+        # volumeMounts:
+        # - name: host-filesystem
+        #   mountPath: /host-system
         env:
           - name: K8S_GOAT_VAULT_KEY
             valueFrom:

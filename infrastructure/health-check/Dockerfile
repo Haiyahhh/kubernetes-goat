@@ -18,8 +18,9 @@ EXPOSE 8080
 # REMEDIATION: Section 5.3 (Missing USER Directive)
 # Define non-root user to prevent unrestricted root access
 # ==========================================
-RUN groupadd -r appgroup && useradd -r -g appgroup appuser
-RUN chown -R appuser:appgroup /app
 
-USER appuser
+RUN groupadd -g 10001 appgroup && useradd -u 10001 -g 10001 -m -s /bin/bash appuser 
+RUN chown -R 10001:10001 /app
+
+USER 10001
 CMD ["/app/health-check"]
