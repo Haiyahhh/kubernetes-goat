@@ -39,9 +39,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         with:
-          args: >
-            -Dsonar.projectKey=Haiyahhh_kubernetes-goat
-            -Dsonar.organization=haiyahhh
+          args: -Dsonar.projectKey=Haiyahhh_kubernetes-goat -Dsonar.organization=haiyahhh
 
   sca-snyk:
     name: SCA (Snyk IaC & Dependencies)
