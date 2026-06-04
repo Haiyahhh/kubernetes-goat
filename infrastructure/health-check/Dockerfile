@@ -1,17 +1,21 @@
 FROM golang:latest
 LABEL MAINTAINER="Madhu Akula" INFO="Kubernetes Goat"
 
-WORKDIR /
+WORKDIR /app
 
-COPY views /views
-COPY go.mod /go.mod
-COPY go.sum /go.sum
-COPY main.go /main.go
-
+COPY views /app/views
+COPY go.mod /app/go.mod
+COPY go.sum /app/go.sum
+COPY main.go /app/main.go
 
 RUN apt update && apt install curl wget iputils-ping -y
-RUN go build -o /
 
-EXPOSE 80
+RUN go build -o /app/health-check main.go
 
-CMD ["/health-check"]
+EXPOSE 8080
+
+RUN groupadd -r appgroup && useradd -r -g appgroup appuser
+RUN chown -R appuser:appgroup /app
+
+USER appuser
+CMD ["/app/health-check"]

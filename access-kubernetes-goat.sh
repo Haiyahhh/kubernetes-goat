@@ -70,7 +70,7 @@ while true; do
     if [ "$POD_STATUS" == "Running" ]; then
         READY=$(kubectl $KUBECTL_INSECURE get pod "$POD_NAME" -o jsonpath='{.status.containerStatuses[*].ready}')
         if [[ "$READY" == *"true"* ]]; then
-            kubectl $KUBECTL_INSECURE port-forward $POD_NAME --address 0.0.0.0 1231:80 > /dev/null 2>&1 &
+            kubectl $KUBECTL_INSECURE port-forward $POD_NAME --address 0.0.0.0 1231:8080 > /dev/null 2>&1 &
             break
         else
             echo "Pod $POD_NAME is running but not all containers are ready."

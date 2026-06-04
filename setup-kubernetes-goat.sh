@@ -72,6 +72,13 @@ kubectl $KUBECTL_INSECURE apply -f scenarios/insecure-rbac/setup.yaml
 echo "deploying helm chart metadata-db scenario"
 helm $HELM_INSECURE install metadata-db scenarios/metadata-db/
 
+# ==========================================
+# CUSTOM DEVSECOPS BUILD PHASE
+# ==========================================
+echo "Compiling hardened health-check container..."
+minikube image build -t my-secure-health-check:v1 ./infrastructure/health-check/
+# ==========================================
+
 # setup the scenarios/configurations
 echo 'deploying the vulnerable scenarios manifests'
 kubectl $KUBECTL_INSECURE apply -f scenarios/batch-check/job.yaml

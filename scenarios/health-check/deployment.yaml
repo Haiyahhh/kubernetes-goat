@@ -52,16 +52,24 @@ spec:
           privileged: true
       containers:
       - name: health-check
-        image: madhuakula/k8s-goat-health-check
+        image: secure-health-check:v1
+        imagePullPolicy: Never
         resources:
           limits:
             memory: "100Mi"
             cpu: "30m"
         ports:
-        - containerPort: 80
-      # Custom Stuff
+        - containerPort: 8080
         securityContext:
-          privileged: true
+          runAsUser: 1000
+          runAsGroup: 1000
+          allowPrivilegeEscalation: false
+          capabilities:
+            drop:
+              - ALL
+            add:
+              - NET_RAW
+
         volumeMounts:
           # Legacy mount path for backward compatibility
           - mountPath: /custom/containerd/containerd.sock
@@ -104,7 +112,7 @@ metadata:
 spec:
   ports:
   - protocol: TCP
-    port: 80
-    targetPort: 80
+    port: 8080
+    targetPort: 8080
   selector:
     app: health-check
