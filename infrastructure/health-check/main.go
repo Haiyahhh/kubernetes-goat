@@ -28,10 +28,7 @@ func main() {
 
 		// Extract the value of the `endpoint` parameter from the request
 		endpoint := c.FormValue("endpoint")
-
-		// Prepare the ping command
-		// VULNERABLE: OS Command Injection
-		cmd := exec.Command("sh", "-c", "ping -c 2 "+endpoint)
+		cmd := exec.Command("ping", "-c", "2", endpoint)
 
 		type error interface {
 			Error() string
