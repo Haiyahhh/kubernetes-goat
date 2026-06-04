@@ -42,7 +42,6 @@ jobs:
           args: >
             -Dsonar.projectKey=Haiyahhh_kubernetes-goat
             -Dsonar.organization=haiyahhh
-            -Dsonar.qualitygate.wait=true
 
   sca-snyk:
     name: SCA (Snyk IaC & Dependencies)
